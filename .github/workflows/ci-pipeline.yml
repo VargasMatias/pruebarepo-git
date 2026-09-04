@@ -1,0 +1,20 @@
+name: pipeline-evaluacion-devops
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  compilar-y-validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del codigo
+        uses: actions/checkout@v4
+
+      - name: Ejecutar validacion inicial
+        run: echo "El pipeline se ha activado exitosamente."
