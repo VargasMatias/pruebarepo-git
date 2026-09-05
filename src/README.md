@@ -52,18 +52,18 @@ La secuencia real de comandos Git ejecutados paso a paso para el desarrollo loca
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
 git config --list
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositiva: Configuración inicial)
+
 2. Inicialización y Primer Guardado del Proyecto
 git init
 git status
 git add .
 git commit -m "Primer commit iniciando el proyecto"
 git branch -M main
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositivas: Inicializar Git en un proyecto y Ejercicio Práctico)
+
 3. Conexión Remota y Subida Inicial a GitHub
 git remote add origin <URL-del-repositorio-creado>
 git push -u origin main
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositivas: Antes de comenzar a trabajar en TBD y Ejercicio Práctico)
+
 4. Creación de la Estructura de Ramas en GitHub
 git branch develop
 git push origin develop
@@ -73,7 +73,6 @@ git push origin feature/nueva-funcionalidad
 
 git branch hotfix/correccion-urgente
 git push origin hotfix/correccion-urgente
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositivas: Creación y manejo de ramas y Realizando cambios en el proyecto)
 5. Flujo de Desarrollo de Funcionalidad (Feature)
 git checkout main
 git pull origin main
@@ -82,7 +81,6 @@ git checkout -b feature/mi-primer-cambio
 git add archivo.txt
 git commit -m "Implementa primera funcionalidad"
 git push origin feature/mi-primer-cambio
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositiva: Comandos esenciales para TBD en GitHub)
 6. Flujo de Desarrollo de Corrección (Hotfix)
 git checkout main
 git pull origin main
@@ -91,7 +89,6 @@ git checkout -b hotfix/solucion-error-critico
 git add .
 git commit -m "Corrige bug urgente detectado en el microservicio"
 git push origin hotfix/solucion-error-critico
-(Grounded en 1.1.2 Git y modelos de trabajo.pdf - Diapositivas: Comandos esenciales para TBD en GitHub y Realizando cambios en el proyecto)
 Automatización con GitHub Actions (CI/CD)
 Hemos configurado una canalización o flujo de trabajo automatizado (Workflow) en el directorio .github/workflows/ci-pipeline.yml del repositorio
 .
