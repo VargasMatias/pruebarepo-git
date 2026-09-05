@@ -15,7 +15,7 @@ public class Student {
     @Column(name = "id")
     private Long id;
 
-    @Pattern(regexp = "^[a-zA-Z]+$", message = "El nombre solo puede contener letras")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "El nombre solo puede contener letra")
     @Size(min = 2, max = 50, message = "El nombre debe tener entre 2 y 50 caracter")
     @NotBlank(message = "No puede ingresar un nombres vacios")
     @Column(name= "name")
