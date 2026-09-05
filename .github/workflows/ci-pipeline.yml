@@ -11,7 +11,6 @@ on:
 jobs:
   compilar-y-validar:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout del codigo
         uses: actions/checkout@v4
