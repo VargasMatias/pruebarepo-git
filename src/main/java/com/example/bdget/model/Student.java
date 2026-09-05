@@ -16,7 +16,7 @@ public class Student {
     private Long id;
 
     @Pattern(regexp = "^[a-zA-Z]+$", message = "El nombre solo puede contener letras")
-    @Size(min = 2, max = 50, message = "El nombre debe tener entre 2 y 50 caracteres")
+    @Size(min = 2, max = 50, message = "El nombre debe tener entre 2 y 50 caracter")
     @NotBlank(message = "No puede ingresar un nombres vacios")
     @Column(name= "name")
     private String name;
